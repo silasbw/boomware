@@ -1,6 +1,7 @@
 # boomware
 
-Opinionated Boom-based wrapper for asynchronous middleware.
+Opinionated [Boom](https://www.npmjs.com/package/boom)-based wrapper
+for asynchronous middleware.
 
 ## Installing
 
@@ -11,15 +12,24 @@ npm i boomware
 ## Example
 
 ```js
+const boom = require('boom')
 const boomware = require('boomware')
 const express = require('express')
 
 const app = express()
- 
+
 app.get('/', boomware(async (req, res) => {
-  if (Math.random() > 0.5) throw('Unexpected error!')
-  req.send('OK!')
+  if (Math.random() > 0.75) throw('Unexpected error!')
+  if (Math.random() > 0.5) throw boom.serverUnavailable()
+  res.send('OK!')
 }))
+
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(err.output.statusCode).json(err.output.payload)
+})
+
+app.listen(3000)
 ```
 
 ## API

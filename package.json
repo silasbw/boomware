@@ -8,7 +8,14 @@
     "test": "standard && mocha"
   },
   "repository": "silasbw/boomware",
-  "keywords": [],
+  "keywords": [
+    "async",
+    "boom",
+    "error",
+    "express",
+    "middleware",
+    "promise"
+  ],
   "author": "Silas Boyd-Wickizer",
   "license": "MIT",
   "bugs": {

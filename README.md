@@ -38,4 +38,4 @@ function.
 
 ## License
 
-[MIT](LICENSE]
+[MIT](LICENSE)

@@ -41,7 +41,7 @@ Returns a middleware function that catches a thrown error, wraps it
 in an [`Boom.badImplementation`](https://www.npmjs.com/package/boom#boombadimplementationmessage-data----alias-internal-)
 if it's not already a Boom error, and passes it to the `next()`
 function. `boomware` handles the case when`fn` return Promise, and the
-case when fn does not return a promise.
+case when `fn` does not return a Promise.
 
 ## Related work
 

@@ -1,5 +1,5 @@
 {
-  "name": "boom-async-middleware",
+  "name": "boomware",
   "version": "1.0.0",
   "description": "Opinionated Boom-based wrapper for asynchronous middleware",
   "main": "index.js",
@@ -7,13 +7,10 @@
     "lint": "standard --fix",
     "test": "standard && mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/silasbw/boom-async-middleware.git"
-  },
+  "repository": "silasbw/boomware",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Silas Boyd-Wickizer",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/silasbw/boom-async-middleware/issues"
   },

@@ -1,10 +1,11 @@
 {
   "name": "boomware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opinionated Boom-based wrapper for asynchronous middleware",
   "main": "index.js",
   "scripts": {
     "lint": "standard --fix",
+    "release": "standard-version --tag-prefix=''",
     "test": "standard && mocha"
   },
   "repository": "silasbw/boomware",
@@ -28,7 +29,8 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {
     "boom": "^7.2.0"

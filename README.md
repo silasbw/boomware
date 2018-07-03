@@ -18,7 +18,7 @@ const app = express()
  
 app.get('/', boomware(async (req, res) => {
   if (Math.random() > 0.5) throw('Unexpected error!')
-  req.sen('OK!')
+  req.send('OK!')
 }))
 ```
 
@@ -29,7 +29,7 @@ app.get('/', boomware(async (req, res) => {
 Returns a middleware function that catches a thrown error, wraps it
 in an [`Boom.badImplementation`](https://www.npmjs.com/package/boom#boombadimplementationmessage-data----alias-internal-)
 if it's not already a Boom error, and passes it to the `next()`
-function.
+function. `fn` must return a `Promise`.
 
 ## References
 

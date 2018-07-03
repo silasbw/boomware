@@ -1,6 +1,6 @@
 {
   "name": "boomware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Opinionated Boom-based wrapper for asynchronous middleware",
   "main": "index.js",
   "scripts": {

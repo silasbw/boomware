@@ -18,7 +18,8 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', boomware(async (req, res) => {
+// Middleware can return a Promise (but it doesn't have to)
+app.get('/async', boomware(async (req, res) => {
   if (Math.random() > 0.75) throw('Unexpected error!')
   if (Math.random() > 0.5) throw boom.serverUnavailable()
   res.send('OK!')
@@ -39,7 +40,8 @@ app.listen(3000)
 Returns a middleware function that catches a thrown error, wraps it
 in an [`Boom.badImplementation`](https://www.npmjs.com/package/boom#boombadimplementationmessage-data----alias-internal-)
 if it's not already a Boom error, and passes it to the `next()`
-function. `fn` must return a `Promise`.
+function. `boomware` handles the case when`fn` return Promise, and the
+case when fn does not return a promise.
 
 ## Related work
 

@@ -25,6 +25,16 @@ describe('boomer', () => {
     })
   })
 
+  it('handles non async', done => {
+    const middleware = boomware((req, res, next) => {
+      next()
+    })
+    middleware(null, null, err => {
+      expect(err).to.be.an('undefined')
+      done()
+    })
+  })
+
   it('handles success', done => {
     const middleware = boomware((req, res, next) => {
       setImmediate(next)

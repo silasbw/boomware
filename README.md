@@ -41,7 +41,7 @@ in an [`Boom.badImplementation`](https://www.npmjs.com/package/boom#boombadimple
 if it's not already a Boom error, and passes it to the `next()`
 function. `fn` must return a `Promise`.
 
-## References
+## Related work
 
 * [Using Async Await in Express with Node 9](https://medium.com/@Abazhenov/using-async-await-in-express-with-node-8-b8af872c0016)
 * [async-middleware](https://www.npmjs.com/package/async-middleware)

@@ -19,5 +19,8 @@
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "boom": "^7.2.0"
   }
 }

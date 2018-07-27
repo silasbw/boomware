@@ -1,12 +1,12 @@
 # boomware
 
 Opinionated [Boom](https://www.npmjs.com/package/boom)-based wrapper
-for asynchronous middleware.
+for asynchronous middleware (or handler) for [Express](https://www.npmjs.com/package/express), [Connect](https://www.npmjs.com/package/connect), [router](https://www.npmjs.com/package/router), etc.
 
 ## Installing
 
 ```
-npm i boomware
+npm i --save boomware
 ```
 
 ## Example
@@ -26,7 +26,7 @@ app.get('/async', boomware(async (req, res) => {
 }))
 
 app.use((err, req, res, next) => {
-  console.error(err);
+  console.error(err)
   res.status(err.output.statusCode).json(err.output.payload)
 })
 

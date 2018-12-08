@@ -1,5 +1,7 @@
 # boomware
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/silasbw/boomware.svg)](https://greenkeeper.io/)
+
 Opinionated [Boom](https://www.npmjs.com/package/boom)-based wrapper
 for asynchronous middleware (or handler) for [Express](https://www.npmjs.com/package/express), [Connect](https://www.npmjs.com/package/connect), [router](https://www.npmjs.com/package/router), etc.
 

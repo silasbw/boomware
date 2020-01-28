@@ -1,5 +1,5 @@
 /* eslint-env mocha */
-const boom = require('boom')
+const boom = require('@hapi/boom')
 const { expect } = require('chai')
 
 const boomware = require('.')

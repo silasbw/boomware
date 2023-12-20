@@ -33,6 +33,6 @@
     "standard-version": "^7.1.0"
   },
   "dependencies": {
-    "@hapi/boom": "^9.0.0"
+    "@hapi/boom": "^9.1.0"
   }
 }
